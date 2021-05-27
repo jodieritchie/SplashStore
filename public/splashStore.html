@@ -14,55 +14,16 @@
 	$.ajax({
 		url: '/replies'
 	  }).done( function(data) {
-		// DO STUFF WITH data
-
-		// var replyListDiv = document.getElementById("tweet-and-replies");
-		// var replyTweetOriginalDiv = document.getElementById("reply-tweet").cloneNode(true); 
-		// var replyHeight = 95;
-
 		var storeGallery = document.getElementById("store-gallery");
+		
 		
 		for (i = 0; i < data.length; i++){
 			var product_data = data[i];
 			var productDiv = document.getElementById("product-image-"+i);
 			var productImage = document.getElementById("product-"+i).src;
 			productDiv.id = "done-product-"+i;
-			productDiv.innerHTML = '<a href=' + product_data.product_URL + "> " + "<img src="+ productImage+">"+"</a>";
-			
+			productDiv.innerHTML = '<a href=' + product_data.product_URL + "> " + "<img src="+productImage+">"+"</a>";
 		}
-
-
-		// for (i = 0; i < data.length; i++) {
-		// 	var reply_tweet = data[i];
-			
-		// 	  var authorDiv = document.getElementById("reply-author-"+i);
-	
-		// 	  if (!authorDiv) {
-		// 		  // this reply has no HTML
-		// 		  var replyCopy = replyTweetOriginalDiv.cloneNode(true);
-		// 		  var height = 415 + (replyHeight * i);
-		// 		  replyCopy.style.transform = "translateY("+height+"px)";
-		// 		  replyListDiv.appendChild(replyCopy);
-		// 		  authorDiv = document.getElementById("reply-author-0");
-		// 	  }
-		// 	  authorDiv.id = "done-author-"+i;
-	
-		// 	  var handleDiv = document.getElementById("reply-handle-"+i);
-		// 	  if (!handleDiv) {
-		// 		  handleDiv = document.getElementById("reply-handle-0");
-		// 	  }
-		// 	  handleDiv.id = "done-handle-"+i;
-			  
-		// 	  var textDiv = document.getElementById("reply-text-"+i);
-		// 	  if (!textDiv) {
-		// 		  textDiv = document.getElementById("reply-text-0");
-		// 	  }
-		// 	  textDiv.id = "done-text-"+i;
-		  
-		// 	  authorDiv.innerHTML = "<div>"+reply_tweet.author+"</div>";
-		// 	  handleDiv.innerHTML = "<div>"+reply_tweet.handle+"</div>";
-		// 	textDiv.innerHTML = "<div>"+reply_tweet.text+"</div>";
-		// }   
 	  });
 	</script>
 	
