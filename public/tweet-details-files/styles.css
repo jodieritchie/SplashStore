@@ -12,6 +12,10 @@ button::-moz-focus-inner,input::-moz-focus-inner{
 input::-webkit-inner-spin-button,input::-webkit-outer-spin-button,input::-webkit-search-cancel-button,input::-webkit-search-decoration,input::-webkit-search-results-button,input::-webkit-search-results-decoration{
 	display:none;
 }
+a {
+    text-decoration: none;
+    font-size: 0;
+}
 .container {
     display:grid;
     grid-template-columns: 1;
@@ -307,20 +311,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button,input::-webkit
     overflow-wrap: break-word;
 }
 
-.accordion__button {
-    cursor: pointer;
-    background-color: white; /* Green */
-    border: none;
-    color: #828282;
-}
-.accordion__button--active {
-    color: #828282;
-}
-#accordion__content {
-    /* overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.2s; */
-}
+
 .grid-gallery {
     display:grid;
     grid-gap: 1rem;
@@ -345,7 +336,10 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button,input::-webkit
     text-decoration: none;
     font-size: 0;
 }
-
+.grid-gallery a {
+    text-decoration: none;
+    font-size: 0;
+}
 
 .r-bcqeeo {
     min-width: 0px;
