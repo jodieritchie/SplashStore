@@ -9,8 +9,17 @@
 	<title>Early Bird Tweet Details Page</title>
 	
 	<!-- ***** TWITTER UNIVERSITY ***** -->
-	  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	<!-- ****** CAROUSEL ****** -->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- **** END CAROUSEL **** -->
+
+
 	  <script>
 		$.ajax({
 			url: '/replies'
@@ -276,10 +285,19 @@
 		
 			<div id="demo" class="collapse">
 			
+<<<<<<< HEAD
 		<div class="css-1dbjc4n r-15d164r r-vlx1xi"><div lang="en" dir="auto" class="css-901oao r-hkyrab r-1qd0xha r-a023e6 r-16dba41 r-ad9z0x r-156q2ks r-bcqeeo r-bnwqim r-qvutc0 grid-gallery"><div id="store-gallery" class="grid-gallery">
 			<div id="product-image-0" class="box pink"><img id="product-0" src="./splashImg/outfit.png" alt="gallery-image-1" ></div>
 			<div id="product-image-1" class="box pink"><img id="product-1" src="./splashImg/purse.png" alt=""></div>
 			<div id="product-image-2" class="box pink"><img id="product-2" src="./splashImg/glasses.png" alt=""></div>
+=======
+		<div class="css-1dbjc4n r-15d164r r-vlx1xi"><div lang="en" dir="auto" class="css-901oao r-hkyrab r-1qd0xha r-a023e6 r-16dba41 r-ad9z0x r-156q2ks r-bcqeeo r-bnwqim r-qvutc0 "><div id="store-gallery" class="owl-carousel owl-theme">
+		<div id="product-image-0" class="box pink item"><img id="product-0" src="./splashImg/outfit.png" alt="gallery-image-1" ></div>
+		<div id="product-image-1" class="box pink item"><img id="product-1" src="./splashImg/purse.png" alt=""></div>
+		<div id="product-image-2" class="box pink item"><img id="product-2" src="./splashImg/glasses.png" alt=""></div>
+		<div id="product-image-2" class="box pink item"><img id="product-2" src="./splashImg/glasses.png" alt=""></div>
+		<div id="product-image-2" class="box pink item"><img id="product-2" src="./splashImg/glasses.png" alt=""></div>
+>>>>>>> d41f24d05a741022fcd8b7a89602dd926ab1e3b9
 	  </div></div></div></div></div></div></div></div></div>
 	</div>
 	
@@ -467,5 +485,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+
+	<!-- ******* CAROUSEL ********  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin: 10,
+            nav:false,
+			autoHeight:false,
+            responsive:{
+                0:{
+                    items:3
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:3
+                }
+            }
+        })
+    </script>
+
+	<!-- ******* END OF CAROUSEL ******** -->
+
 	</body>
-	</html>
+</html>
