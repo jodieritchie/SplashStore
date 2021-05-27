@@ -557,6 +557,10 @@ element {
 .r-dap0kf {
     min-height: 59px;
 }
+.influencer-image-height {
+    max-height: 600px;
+}
+
 .r-t23y2h {
     border-radius: 14px;
 }
