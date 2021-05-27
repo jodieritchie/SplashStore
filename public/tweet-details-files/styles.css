@@ -263,11 +263,6 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button,input::-webkit
 .r-6koalj {
     display: flex;
 }
-.market-menu {
-    justify-content: space-between;
-    border-bottom: 1.5px solid rgba(216, 216, 216, 0.7);
-
-}
 .r-mtrfb5 {
     min-width: 49px;
 }
@@ -306,33 +301,6 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button,input::-webkit
 .r-qvutc0 {
     overflow-wrap: break-word;
 }
-
-.accordion {
-    
-}
-
-.grid-gallery {
-    display:grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-.grid-gallery div {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    
-}
-.pink {
-    background-color: pink;
-    min-height: 160px;
-    border-radius: 14px;
-    align-items: center;
-}
-.grid-gallery img {
-    border-radius: 14px;
-}
-
-
 .r-bcqeeo {
     min-width: 0px;
 }
@@ -588,33 +556,6 @@ element {
 }
 .r-dap0kf {
     min-height: 59px;
-}
-.influencer-image-height {
-    max-height: 600px;
-}
-.material-icons {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-  
-    /* Support for all WebKit browsers. */
-    -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
-    text-rendering: optimizeLegibility;
-  
-    /* Support for Firefox. */
-    -moz-osx-font-smoothing: grayscale;
-  
-    /* Support for IE. */
-    font-feature-settings: 'liga';
 }
 .r-t23y2h {
     border-radius: 14px;
