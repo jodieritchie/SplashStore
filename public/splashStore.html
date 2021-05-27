@@ -1,3 +1,4 @@
+
 <html>
 	<head>
 	
@@ -8,25 +9,23 @@
 	
 	<title>Early Bird Tweet Details Page</title>
 	
-
 	<!-- ***** TWITTER UNIVERSITY ***** -->
 	  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-	<script>
-	$.ajax({
-		url: '/replies'
-	  }).done( function(data) {
-		var storeGallery = document.getElementById("store-gallery");
-
-		
-		for (i = 0; i < data.length; i++){
-			var product_data = data[i];
-			var productDiv = document.getElementById("product-image-"+i);
-			var productImage = document.getElementById("product-"+i).src;
-			productDiv.id = "done-product-"+i;
-			productDiv.innerHTML = '<a href=' + product_data.product_URL + "> " + "<img src="+productImage+">"+"</a>";
-		}
-	  });
-	</script>
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	  <script>
+		$.ajax({
+			url: '/replies'
+		  }).done( function(data) {
+			var storeGallery = document.getElementById("store-gallery");
+			for (i = 0; i < data.length; i++){
+				var product_data = data[i];
+				var productDiv = document.getElementById("product-image-"+i);
+				var productImage = document.getElementById("product-"+i).src;
+				productDiv.id = "done-product-"+i;
+				productDiv.innerHTML = '<a href=' + product_data.product_URL + "> " + "<img src="+productImage+">"+"</a>";
+			}
+		  });
+		</script>
 	
 	</head>
 	
@@ -270,13 +269,20 @@
 		<!-- Jack retweet -->
 	<div class="css-1dbjc4n"><div class="css-1dbjc4n"><div class="css-1dbjc4n r-156q2ks"><div class="css-1dbjc4n"><div aria-haspopup="false" role="blockquote" data-focusable="true" tabindex="0" class="css-1dbjc4n r-9x6qib r-t23y2h r-rs99b7 r-1loqt21 r-dap0kf r-1udh08x r-o7ynqc r-6416eg"><div class="css-1dbjc4n"><div class="css-1dbjc4n r-1habvwh r-6koalj r-18u37iz r-1wbh5a2 r-vlx1xi r-156q2ks market-menu"><div class="css-1dbjc4n r-1wbh5a2 r-1udh08x"><div class="css-1dbjc4n r-1habvwh r-dnmrzs"><div class="css-1dbjc4n r-1wbh5a2 r-dnmrzs"><div aria-haspopup="false" class="css-1dbjc4n r-1wbh5a2 r-dnmrzs r-1ny4l3l"><div class="css-1dbjc4n r-1awozwy r-18u37iz r-1wbh5a2 r-dnmrzs r-1ny4l3l"><div class="css-1dbjc4n r-1awozwy r-18u37iz r-dnmrzs">
 		
-		<span class="material-icons">storefront</span>
+		<span class="material-icons" >storefront</span>
 	
-		<div dir="auto" class="css-901oao r-hkyrab r-18u37iz r-1q142lx r-1qd0xha r-a023e6 r-16dba41 r-ad9z0x r-bcqeeo r-qvutc0 padding-2"></div></div><div class="css-1dbjc4n r-18u37iz r-1wbh5a2 r-1f6r7vd"><div dir="ltr" class="css-901oao css-bfa6kz r-1re7ezh r-18u37iz r-1qd0xha r-a023e6 r-16dba41 r-ad9z0x r-bcqeeo r-qvutc0"></div></div></div></div></div></div></div><div dir="ltr" class="css-901oao r-1re7ezh r-1q142lx r-1qd0xha r-a023e6 r-16dba41 r-ad9z0x r-bcqeeo r-yrgyi6 r-qvutc0"><span title="12:52 PM · Mar 21, 2020" aria-label="Mar 21" class="css-901oao css-16my406 r-1re7ezh r-1q142lx r-1qd0xha r-ad9z0x r-bcqeeo r-3s2u2q r-qvutc0 "> <button type="button" class="material-icons accordion__button "> keyboard_arrow_down </button></span></div></div><div class="css-1dbjc4n r-15d164r r-vlx1xi"><div lang="en" dir="auto" class="css-901oao r-hkyrab r-1qd0xha r-a023e6 r-16dba41 r-ad9z0x r-156q2ks r-bcqeeo r-bnwqim r-qvutc0 grid-gallery"><div id="store-gallery" class="grid-gallery">
-		<div id="product-image-0" class="box pink"><img id="product-0" src="./splashImg/outfit.png" alt="gallery-image-1"></div>
-		<div id="product-image-1" class="box pink"><img id="product-1" src="./splashImg/purse.png" alt=""></div>
-		<div id="product-image-2" class="box pink"><img id="product-2" src="./splashImg/glasses.png" alt=""></div>
+		<div dir="auto" class="css-901oao r-hkyrab r-18u37iz r-1q142lx r-1qd0xha r-a023e6 r-16dba41 r-ad9z0x r-bcqeeo r-qvutc0 padding-2"></div></div><div class="css-1dbjc4n r-18u37iz r-1wbh5a2 r-1f6r7vd"><div dir="ltr" class="css-901oao css-bfa6kz r-1re7ezh r-18u37iz r-1qd0xha r-a023e6 r-16dba41 r-ad9z0x r-bcqeeo r-qvutc0"></div></div></div></div></div></div></div><div dir="ltr" class="css-901oao r-1re7ezh r-1q142lx r-1qd0xha r-a023e6 r-16dba41 r-ad9z0x r-bcqeeo r-yrgyi6 r-qvutc0"><span title="12:52 PM · Mar 21, 2020" aria-label="Mar 21" class="css-901oao css-16my406 r-1re7ezh r-1q142lx r-1qd0xha r-ad9z0x r-bcqeeo r-3s2u2q r-qvutc0 ">
+			
+			<span class="material-icons" data-toggle="collapse" data-target="#demo"> keyboard_arrow_down </span></span></div></div>
+		
+			<div id="demo" class="collapse">
+			
+		<div class="css-1dbjc4n r-15d164r r-vlx1xi"><div lang="en" dir="auto" class="css-901oao r-hkyrab r-1qd0xha r-a023e6 r-16dba41 r-ad9z0x r-156q2ks r-bcqeeo r-bnwqim r-qvutc0 grid-gallery"><div class="grid-gallery">
+		<div class="box pink"><img src="./splashImg/outfit.png" alt="gallery-image-1" ></div>
+		<div class="box pink"><img src="./splashImg/purse.png" alt=""></div>
+		<div class="box pink"><img src="./splashImg/glasses.png" alt=""></div>
 	  </div></div></div></div></div></div></div></div></div>
+	</div>
 	
 	<!-- ***** TWEET BODY ***** end -->
 	
@@ -457,6 +463,10 @@
 	</main>
 	
 	</div>
-	
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 	</body>
 	</html>
