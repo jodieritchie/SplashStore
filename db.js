@@ -1,5 +1,5 @@
 module.exports = function() {
   return {
-    replies: require('./replies.json'),
+    replies: require('./storeData.json'),
   }
 }
