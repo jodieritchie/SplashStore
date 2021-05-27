@@ -310,7 +310,6 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button,input::-webkit
 .accordion {
     
 }
-
 .grid-gallery {
     display:grid;
     grid-gap: 1rem;
@@ -330,6 +329,10 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button,input::-webkit
 }
 .grid-gallery img {
     border-radius: 14px;
+}
+.grid-gallery a {
+    text-decoration: none;
+    font-size: 0;
 }
 
 

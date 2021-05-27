@@ -16,6 +16,7 @@
 	$.ajax({
 		url: '/replies'
 	  }).done( function(data) {
+<<<<<<< HEAD
 		// DO STUFF WITH data
 	
 		var replyListDiv = document.getElementById("tweet-and-replies");
@@ -54,6 +55,18 @@
 			  handleDiv.innerHTML = "<div>"+reply_tweet.handle+"</div>";
 			textDiv.innerHTML = "<div>"+reply_tweet.text+"</div>";
 		}   
+=======
+		var storeGallery = document.getElementById("store-gallery");
+		
+		
+		for (i = 0; i < data.length; i++){
+			var product_data = data[i];
+			var productDiv = document.getElementById("product-image-"+i);
+			var productImage = document.getElementById("product-"+i).src;
+			productDiv.id = "done-product-"+i;
+			productDiv.innerHTML = '<a href=' + product_data.product_URL + "> " + "<img src="+productImage+">"+"</a>";
+		}
+>>>>>>> 59f7f6bb081d358816bbad564162d398ff1f3a0e
 	  });
 	</script>
 	
