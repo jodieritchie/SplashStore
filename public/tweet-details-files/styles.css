@@ -310,12 +310,16 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button,input::-webkit
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    
 }
 .pink {
     background-color: pink;
     min-height: 160px;
     border-radius: 14px;
     align-items: center;
+}
+.grid-gallery img {
+    border-radius: 14px;
 }
 
 .r-bcqeeo {
