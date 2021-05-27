@@ -8,6 +8,7 @@
 	
 	<title>Early Bird Tweet Details Page</title>
 	
+
 	<!-- ***** TWITTER UNIVERSITY ***** -->
 	  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script>
@@ -15,7 +16,7 @@
 		url: '/replies'
 	  }).done( function(data) {
 		var storeGallery = document.getElementById("store-gallery");
-		
+
 		
 		for (i = 0; i < data.length; i++){
 			var product_data = data[i];
