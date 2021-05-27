@@ -1,3 +1,4 @@
+
 <html>
 	<head>
 	
@@ -15,53 +16,43 @@
 		url: '/replies'
 	  }).done( function(data) {
 		// DO STUFF WITH data
-
-		// var replyListDiv = document.getElementById("tweet-and-replies");
-		// var replyTweetOriginalDiv = document.getElementById("reply-tweet").cloneNode(true); 
-		// var replyHeight = 95;
-
-		var storeGallery = document.getElementById("store-gallery");
-		
-		for (i = 0; i < data.length; i++){
-			var product_data = data[i];
-			var productDiv = document.getElementById("product-image-"+i);
-			var productImage = document.getElementById("product-"+i).src;
-			productDiv.id = "done-product-"+i;
-			productDiv.innerHTML = "<a href="+ product_data.product_URL + "> " + "<img src="+ productImage+">"+"</a>";
-		}
-
-
-		// for (i = 0; i < data.length; i++) {
-		// 	var reply_tweet = data[i];
+	
+		var replyListDiv = document.getElementById("tweet-and-replies");
+		var replyTweetOriginalDiv = document.getElementById("reply-tweet").cloneNode(true); 
+	
+		var replyHeight = 95;
+	
+		for (i = 0; i < data.length; i++) {
+			var reply_tweet = data[i];
 			
-		// 	  var authorDiv = document.getElementById("reply-author-"+i);
+			  var authorDiv = document.getElementById("reply-author-"+i);
 	
-		// 	  if (!authorDiv) {
-		// 		  // this reply has no HTML
-		// 		  var replyCopy = replyTweetOriginalDiv.cloneNode(true);
-		// 		  var height = 415 + (replyHeight * i);
-		// 		  replyCopy.style.transform = "translateY("+height+"px)";
-		// 		  replyListDiv.appendChild(replyCopy);
-		// 		  authorDiv = document.getElementById("reply-author-0");
-		// 	  }
-		// 	  authorDiv.id = "done-author-"+i;
+			  if (!authorDiv) {
+				  // this reply has no HTML
+				  var replyCopy = replyTweetOriginalDiv.cloneNode(true);
+				  var height = 415 + (replyHeight * i);
+				  replyCopy.style.transform = "translateY("+height+"px)";
+				  replyListDiv.appendChild(replyCopy);
+				  authorDiv = document.getElementById("reply-author-0");
+			  }
+			  authorDiv.id = "done-author-"+i;
 	
-		// 	  var handleDiv = document.getElementById("reply-handle-"+i);
-		// 	  if (!handleDiv) {
-		// 		  handleDiv = document.getElementById("reply-handle-0");
-		// 	  }
-		// 	  handleDiv.id = "done-handle-"+i;
+			  var handleDiv = document.getElementById("reply-handle-"+i);
+			  if (!handleDiv) {
+				  handleDiv = document.getElementById("reply-handle-0");
+			  }
+			  handleDiv.id = "done-handle-"+i;
 			  
-		// 	  var textDiv = document.getElementById("reply-text-"+i);
-		// 	  if (!textDiv) {
-		// 		  textDiv = document.getElementById("reply-text-0");
-		// 	  }
-		// 	  textDiv.id = "done-text-"+i;
+			  var textDiv = document.getElementById("reply-text-"+i);
+			  if (!textDiv) {
+				  textDiv = document.getElementById("reply-text-0");
+			  }
+			  textDiv.id = "done-text-"+i;
 		  
-		// 	  authorDiv.innerHTML = "<div>"+reply_tweet.author+"</div>";
-		// 	  handleDiv.innerHTML = "<div>"+reply_tweet.handle+"</div>";
-		// 	textDiv.innerHTML = "<div>"+reply_tweet.text+"</div>";
-		// }   
+			  authorDiv.innerHTML = "<div>"+reply_tweet.author+"</div>";
+			  handleDiv.innerHTML = "<div>"+reply_tweet.handle+"</div>";
+			textDiv.innerHTML = "<div>"+reply_tweet.text+"</div>";
+		}   
 	  });
 	</script>
 	
@@ -309,10 +300,10 @@
 		
 		<span class="material-icons">storefront</span>
 	
-		<div dir="auto" class="css-901oao r-hkyrab r-18u37iz r-1q142lx r-1qd0xha r-a023e6 r-16dba41 r-ad9z0x r-bcqeeo r-qvutc0 padding-2"></div></div><div class="css-1dbjc4n r-18u37iz r-1wbh5a2 r-1f6r7vd"><div dir="ltr" class="css-901oao css-bfa6kz r-1re7ezh r-18u37iz r-1qd0xha r-a023e6 r-16dba41 r-ad9z0x r-bcqeeo r-qvutc0"></div></div></div></div></div></div></div><div dir="ltr" class="css-901oao r-1re7ezh r-1q142lx r-1qd0xha r-a023e6 r-16dba41 r-ad9z0x r-bcqeeo r-yrgyi6 r-qvutc0"><span title="12:52 PM · Mar 21, 2020" aria-label="Mar 21" class="css-901oao css-16my406 r-1re7ezh r-1q142lx r-1qd0xha r-ad9z0x r-bcqeeo r-3s2u2q r-qvutc0 "> <button type="button" class="material-icons accordion__button "> keyboard_arrow_down </button></span></div></div><div class="css-1dbjc4n r-15d164r r-vlx1xi"><div lang="en" dir="auto" class="css-901oao r-hkyrab r-1qd0xha r-a023e6 r-16dba41 r-ad9z0x r-156q2ks r-bcqeeo r-bnwqim r-qvutc0 grid-gallery"><div id="store-gallery" class="grid-gallery">
-		<div id="product-image-0" class="box pink"><img id="product-0" src="./splashImg/outfit.png" alt="gallery-image-1"></div>
-		<div id="product-image-1" class="box pink"><img id="product-1" src="./splashImg/purse.png" alt=""></div>
-		<div id="product-image-2" class="box pink"><img id="product-2" src="./splashImg/glasses.png" alt=""></div>
+		<div dir="auto" class="css-901oao r-hkyrab r-18u37iz r-1q142lx r-1qd0xha r-a023e6 r-16dba41 r-ad9z0x r-bcqeeo r-qvutc0 padding-2"></div></div><div class="css-1dbjc4n r-18u37iz r-1wbh5a2 r-1f6r7vd"><div dir="ltr" class="css-901oao css-bfa6kz r-1re7ezh r-18u37iz r-1qd0xha r-a023e6 r-16dba41 r-ad9z0x r-bcqeeo r-qvutc0"></div></div></div></div></div></div></div><div dir="ltr" class="css-901oao r-1re7ezh r-1q142lx r-1qd0xha r-a023e6 r-16dba41 r-ad9z0x r-bcqeeo r-yrgyi6 r-qvutc0"><span title="12:52 PM · Mar 21, 2020" aria-label="Mar 21" class="css-901oao css-16my406 r-1re7ezh r-1q142lx r-1qd0xha r-ad9z0x r-bcqeeo r-3s2u2q r-qvutc0 "> <span class="material-icons"> keyboard_arrow_down </span></span></div></div><div class="css-1dbjc4n r-15d164r r-vlx1xi"><div lang="en" dir="auto" class="css-901oao r-hkyrab r-1qd0xha r-a023e6 r-16dba41 r-ad9z0x r-156q2ks r-bcqeeo r-bnwqim r-qvutc0 grid-gallery"><div class="grid-gallery">
+		<div class="box pink"><img src="./splashImg/outfit.png" alt="gallery-image-1"></div>
+		<div class="box pink"><img src="./splashImg/purse.png" alt=""></div>
+		<div class="box pink"><img src="./splashImg/glasses.png" alt=""></div>
 	  </div></div></div></div></div></div></div></div></div>
 	
 	<!-- ***** TWEET BODY ***** end -->

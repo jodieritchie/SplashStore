@@ -301,6 +301,47 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button,input::-webkit
 .r-qvutc0 {
     overflow-wrap: break-word;
 }
+<<<<<<< HEAD
+=======
+
+.accordion__button {
+    cursor: pointer;
+    background-color: white; /* Green */
+    border: none;
+    color: #828282;
+}
+.accordion__button--active {
+    color: #828282;
+}
+#accordion__content {
+    /* overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s; */
+}
+
+.grid-gallery {
+    display:grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.grid-gallery div {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    
+}
+.pink {
+    background-color: pink;
+    min-height: 160px;
+    border-radius: 14px;
+    align-items: center;
+}
+.grid-gallery img {
+    border-radius: 14px;
+}
+
+
+>>>>>>> 176a4238aaad14d7df5fc7586f2b4d1730a7d9af
 .r-bcqeeo {
     min-width: 0px;
 }

@@ -1,9 +1,25 @@
 [
 	{
     "id": 123,
-  	"name": "Happy Birthday!",
-   	"price": "Glyne Gittens",
-    "product_URL": "X",
+  	"name": "Outfit",
+   	"price": 170,
+    "product_URL": "https://www.asos.com/us/",
+    "shop_location": "USA",
+    "handle": "@GlyneGittens"
+	},
+  {
+    "id": 426,
+  	"name": "Purse",
+   	"price": 100,
+    "product_URL": "https://www.asos.com/us/",
+    "shop_location": "USA",
+    "handle": "@GlyneGittens"
+	},
+  {
+    "id": 210,
+  	"name": "Glasses",
+   	"price": 120,
+    "product_URL": "https://www.asos.com/us/",
     "shop_location": "USA",
     "handle": "@GlyneGittens"
 	}
