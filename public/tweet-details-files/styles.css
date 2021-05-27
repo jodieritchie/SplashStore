@@ -307,8 +307,19 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button,input::-webkit
     overflow-wrap: break-word;
 }
 
-.accordion {
-    
+.accordion__button {
+    cursor: pointer;
+    background-color: white; /* Green */
+    border: none;
+    color: #828282;
+}
+.accordion__button--active {
+    color: #828282;
+}
+#accordion__content {
+    /* overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s; */
 }
 .grid-gallery {
     display:grid;
