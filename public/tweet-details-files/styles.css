@@ -263,6 +263,11 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button,input::-webkit
 .r-6koalj {
     display: flex;
 }
+.market-menu {
+    justify-content: space-between;
+    border-bottom: 1.5px solid rgba(216, 216, 216, 0.7);
+
+}
 .r-mtrfb5 {
     min-width: 49px;
 }
@@ -301,22 +306,9 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button,input::-webkit
 .r-qvutc0 {
     overflow-wrap: break-word;
 }
-<<<<<<< HEAD
-=======
 
-.accordion__button {
-    cursor: pointer;
-    background-color: white; /* Green */
-    border: none;
-    color: #828282;
-}
-.accordion__button--active {
-    color: #828282;
-}
-#accordion__content {
-    /* overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.2s; */
+.accordion {
+    
 }
 
 .grid-gallery {
@@ -341,7 +333,6 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button,input::-webkit
 }
 
 
->>>>>>> 176a4238aaad14d7df5fc7586f2b4d1730a7d9af
 .r-bcqeeo {
     min-width: 0px;
 }
@@ -597,6 +588,33 @@ element {
 }
 .r-dap0kf {
     min-height: 59px;
+}
+.influencer-image-height {
+    max-height: 600px;
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
 }
 .r-t23y2h {
     border-radius: 14px;
