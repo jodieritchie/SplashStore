@@ -263,6 +263,11 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button,input::-webkit
 .r-6koalj {
     display: flex;
 }
+.market-menu {
+    justify-content: space-between;
+    border-bottom: 1.5px solid rgba(216, 216, 216, 0.7);
+
+}
 .r-mtrfb5 {
     min-width: 49px;
 }
@@ -301,6 +306,11 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button,input::-webkit
 .r-qvutc0 {
     overflow-wrap: break-word;
 }
+
+.accordion {
+    
+}
+
 .grid-gallery {
     display:grid;
     grid-gap: 1rem;
@@ -321,6 +331,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button,input::-webkit
 .grid-gallery img {
     border-radius: 14px;
 }
+
 
 .r-bcqeeo {
     min-width: 0px;
