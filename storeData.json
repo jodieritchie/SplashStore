@@ -3,7 +3,7 @@
     "id": 123,
   	"name": "Outfit",
    	"price": 170,
-    "product_URL": "https://www.asos.com/us/",
+    "product_URL": "https://www.missguidedus.com/blue-co-ord-tailored-cropped-blazer-10227606",
     "shop_location": "USA",
     "handle": "@GlyneGittens"
 	},
@@ -11,7 +11,7 @@
     "id": 426,
   	"name": "Purse",
    	"price": 100,
-    "product_URL": "https://www.asos.com/us/",
+    "product_URL": "https://www.amazon.com/dp/B08FBJ3ZVZ/ref=twister_B08FBHGSLS?_encoding=UTF8&psc=1",
     "shop_location": "USA",
     "handle": "@GlyneGittens"
 	},
@@ -19,7 +19,7 @@
     "id": 210,
   	"name": "Glasses",
    	"price": 120,
-    "product_URL": "https://www.asos.com/us/",
+    "product_URL": "https://www.aliexpress.com/item/32908577283.html",
     "shop_location": "USA",
     "handle": "@GlyneGittens"
 	}
